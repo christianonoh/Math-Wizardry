@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="./src/images/logo.png" alt="logo" width="140"  height="auto" />
+  <img src="./src/images/logo.png" alt="logo" width="280"  height="auto" />
   <br/>
 
   <h3><b>Math Wizardry</b></h3>
