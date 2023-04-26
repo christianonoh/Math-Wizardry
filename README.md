@@ -55,8 +55,6 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **Simple calculations:** Users can perform basic mathematical operations such as addition, subtraction, multiplication, and division.
 - **Random math quotes:** Users can read inspiring and thought-provoking quotes from famous mathematicians.
 - **Responsive design:** The app is designed to work seamlessly across desktop and mobile devices.
@@ -149,8 +147,6 @@ If you enjoy using Math Wizardry, please consider supporting us to help keep the
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-> Give credit to everyone who inspired your codebase.
 
 I would like to thank Microverse and my coding partners.
 
