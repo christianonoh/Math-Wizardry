@@ -13,12 +13,16 @@ body {
 
 .calculator {
   width: 25rem;
-  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 1rem;
 }
 
 .screen {
   height: 150px;
-  background-color: aquamarine;
+  background-color: #858694;
+  padding: 1rem;
+  font-size: 2rem;
+  color: aliceblue;
 }
 
 .buttons {
@@ -26,8 +30,6 @@ body {
   grid-template-columns: repeat(4, 1fr);
   background-color: black;
   height: 30rem;
-  gap: 0.8rem;
-  padding: 1rem;
 }
 
 .buttons :nth-child(17) {
@@ -37,12 +39,10 @@ body {
 button {
   font-size: 1.5rem;
   font-weight: 600;
-  border: 0;
-  color: aliceblue;
-  background-color: transparent;
+  color: black;
+  background-color: #e0e0e0;
 }
 
 .operator {
-  background-color: #3c0958;
-  border-radius: 1rem;
+  background-color: #f4913e;
 }

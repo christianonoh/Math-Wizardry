@@ -8,8 +8,8 @@ function Screen() {
 function Calculator() {
   const buttons = [
     { value: 'AC', className: 'clear' },
-    { value: '+/-', className: 'operator' },
-    { value: '%', className: 'operator', name: '/' },
+    { value: '+/-' },
+    { value: '%', name: '/' },
     { value: '÷', className: 'operator', name: 'plusminus' },
     { value: '7' },
     { value: '8' },
