@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Buttons(props) {
+function Buttons({ value, className, handleClick }) {
   Buttons.propTypes = {
     value: PropTypes.string.isRequired,
     className: PropTypes.string.isRequired,
+    handleClick: PropTypes.func.isRequired,
   };
-  const { value, className } = props;
   return (
-    <button type="button" className={className}>
+    <button type="button" className={className} onClick={handleClick}>
       {value}
     </button>
   );
