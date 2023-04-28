@@ -1,10 +1,14 @@
 import React from 'react';
 import './App.css';
 import Calculator from './components/Calculator';
+import Quotes from './components/Quotes';
 
 function App() {
   return (
-    <Calculator />
+    <div className="wrapper">
+      <Calculator />
+      <Quotes category="family" />
+    </div>
   );
 }
 
