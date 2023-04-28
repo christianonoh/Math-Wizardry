@@ -16,6 +16,7 @@ function Quotes({ category }) {
     try {
       setLoading(true);
       setError(null);
+      setQuoteObj([]);
       const res = await fetch(apiUrl, requestOptions);
       if (!res.ok) {
         throw new Error('Error fetching quote.');
@@ -23,12 +24,10 @@ function Quotes({ category }) {
       const json = await res.json();
       setLoading(false);
       setQuoteObj(json);
-      console.log('Sent request');
     } catch (error) {
       setError('Error fetching quote.');
       setQuoteObj([]);
       setLoading(false);
-      console.log('Sent request but failed');
     }
   };
 
