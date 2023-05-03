@@ -1,14 +1,22 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import Calculator from './components/Calculator';
-import Quotes from './components/Quotes';
+import Layout from './components/Layout';
+import QuotesPage from './routes/QuotesPage';
+import HomePage from './routes/HomePage';
+import CalculatorPage from './routes/CalculatorPage';
+import NotMatch from './routes/NotMatch';
 
 function App() {
   return (
-    <div className="wrapper">
-      <Calculator />
-      <Quotes category="family" />
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<HomePage />} />
+        <Route path="calculator" element={<CalculatorPage />} />
+        <Route path="quotes" element={<QuotesPage />} />
+        <Route path="*" element={<NotMatch />} />
+      </Route>
+    </Routes>
   );
 }
 
