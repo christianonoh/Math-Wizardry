@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 
 function Quotes({ category }) {
   const [quoteObj, setQuoteObj] = useState([]);
@@ -45,17 +46,14 @@ function Quotes({ category }) {
 
   return (
     <div className="quote-container">
-      <h1>
-        {category?.charAt(0)?.toUpperCase() + category?.slice(1)}
-        {' '}
-        Quotes
-      </h1>
+      <span className="left-quote"><FaQuoteLeft /></span>
       {Array.isArray(quoteObj) && quoteObj.map((element) => (
         <div key={element?.author}>
           <blockquote className="quote">
             {element?.quote}
           </blockquote>
-          <h5><i>{element?.author}</i></h5>
+          <span className="right-quote"><FaQuoteRight /></span>
+          <h5 className="quote-author">{element?.author}</h5>
         </div>
       ))}
     </div>
